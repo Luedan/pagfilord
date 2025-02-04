@@ -7637,19 +7637,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\atenc\\.nuget\\packages\\": {}
+    "C:\\Users\\Luis Atencia\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atenc\\ATENCIA\\DOTNET\\PagFilOrd\\PagFilOrd\\PagFilOrd.csproj",
+      "projectUniqueName": "C:\\Users\\Luis Atencia\\ATENCIA\\pagfilord\\PagFilOrd\\PagFilOrd.csproj",
       "projectName": "PagFilOrd",
-      "projectPath": "C:\\Users\\atenc\\ATENCIA\\DOTNET\\PagFilOrd\\PagFilOrd\\PagFilOrd.csproj",
-      "packagesPath": "C:\\Users\\atenc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atenc\\ATENCIA\\DOTNET\\PagFilOrd\\PagFilOrd\\obj\\",
+      "projectPath": "C:\\Users\\Luis Atencia\\ATENCIA\\pagfilord\\PagFilOrd\\PagFilOrd.csproj",
+      "packagesPath": "C:\\Users\\Luis Atencia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luis Atencia\\ATENCIA\\pagfilord\\PagFilOrd\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\atenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luis Atencia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

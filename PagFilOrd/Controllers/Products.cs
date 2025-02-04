@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,9 +19,26 @@ namespace PagFilOrd.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> Get()
+        public async Task<ActionResult<PaginatedResult<Product>>> Get()
         {
-            return await _context.Products.ToListAsync();
+            
+            var filtros = new Dictionary<string, object>
+            {
+                // { "Name", new List<string> { "Product 1", "Product 5", "Product 8" } },
+                // {"Category.Name", "Category 1"}
+            };
+
+            string sort = "Category.Id DESC";
+            
+            var predicate = Helper.BuildPredicate<Product>(filtros);
+            
+            var results =  _context.Products.Include(e => e.Category).Where(predicate);
+
+            results = Helper.ApplySorting(results, sort);
+
+            var pagin = Helper.ApplyPagination(results, 1, 1);
+            
+            return  pagin;
         }
 
         [HttpGet("{id}")]
