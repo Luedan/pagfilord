@@ -1,0 +1,6 @@
+@PagFilOrd_HostAddress = http://localhost:5010
+
+GET {{PagFilOrd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
